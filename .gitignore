@@ -1,0 +1,6 @@
+.DS_Store
+.venv/
+*.csv
+*.duckdb
+*.duckdb.wal
+데이터/*.zip
