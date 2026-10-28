@@ -46,6 +46,15 @@ import duckdb; con=duckdb.connect('seoul.duckdb')
 | sql/04_L3_where_and_when.sql | 외식업 상권유형·시간대·요일별 기여도 |
 | sql/05_L4_alley_dinner.sql | 골목 외식 저녁: 분기 추이·업종·상권 5분위·연령 |
 | 기획안_골목식당_저녁매출_방어.md | L4 결과 기반 파일럿 기획안 |
+| charts.py | sql/02·04·05를 실행해 `charts/*.png` 8장 생성 (`pip install matplotlib`, NanumGothic 폰트 필요) |
+
+## 그래프
+| | |
+|---|---|
+| ![](charts/01_L1_건수_객단가.png) | ![](charts/02_L3_상권유형.png) |
+| ![](charts/03_L3_시간대.png) | ![](charts/04_L4_골목_저녁vs점심_분기.png) |
+| ![](charts/05_L4_업종별_저녁기여도.png) | ![](charts/06_L4_연령대.png) |
+| ![](charts/07_L4_상권5분위.png) | ![](charts/08_L4_갭상권_산점도.png) |
 
 ## 한계
 - 카드 결제 기반 **추정** 매출이며 개별 매장 단위가 아님 → 리텐션·코호트 분석 불가, 시장 단위 분석으로 한정
